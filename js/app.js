@@ -35,6 +35,7 @@ const displaySearchResult = books => {
     searchResult.textContent = '';
     // display search results
     if (books.docs.length === 0) {
+        console.log(books?.docs?.length);
         // no result found
         const noResultMessage = document.getElementById('no-result');
         const h3 = document.createElement('h3');
